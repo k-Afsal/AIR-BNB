@@ -30,3 +30,4 @@
 /Users/apple/workspace/AIR-BNB/AirBnb-Backend/obj/Debug/net9.0/AirBnb-Backend.pdb
 /Users/apple/workspace/AIR-BNB/AirBnb-Backend/obj/Debug/net9.0/AirBnb-Backend.genruntimeconfig.cache
 /Users/apple/workspace/AIR-BNB/AirBnb-Backend/obj/Debug/net9.0/ref/AirBnb-Backend.dll
+/Users/apple/workspace/AIR-BNB/AirBnb-Backend/obj/Debug/net9.0/AirBnb-Backend.sourcelink.json
