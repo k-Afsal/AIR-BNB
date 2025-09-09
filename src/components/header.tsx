@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { NomadNestLogo } from '@/components/icons';
+import { AirBnbLogo } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -19,9 +19,9 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="hidden items-center gap-2 md:flex">
-          <NomadNestLogo className="h-8 w-8 text-primary" />
+          <AirBnbLogo className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold text-primary-foreground font-headline tracking-tighter">
-            Nomad Nest
+            Air BNB
           </span>
         </Link>
         <div className="flex-1 md:flex-none md:w-auto md:mx-4">

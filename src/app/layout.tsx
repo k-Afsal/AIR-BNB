@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Nomad Nest',
+  title: 'Air BNB',
   description: 'Your home away from home.',
 };
 
