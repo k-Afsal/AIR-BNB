@@ -13,6 +13,8 @@ import {
 import { Heart, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import { toggleWishlist } from '@/lib/features/wishlist/wishlistSlice';
 
 interface PropertyCardProps {
   property: Property;
@@ -20,6 +22,16 @@ interface PropertyCardProps {
 }
 
 export function PropertyCard({ property, className }: PropertyCardProps) {
+  const dispatch = useAppDispatch();
+  const wishlist = useAppSelector((state) => state.wishlist.items);
+  const isWishlisted = wishlist.some((item) => item.id === property.id);
+
+  const handleWishlistToggle = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dispatch(toggleWishlist(property));
+  };
+
   return (
     <div className={cn('group relative', className)}>
       <Link href={`/properties/${property.id}`} className="block">
@@ -62,8 +74,13 @@ export function PropertyCard({ property, className }: PropertyCardProps) {
           </p>
         </div>
       </Link>
-      <Button variant="ghost" size="icon" className="absolute top-3 right-3 rounded-full text-white bg-black/20 hover:bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
-        <Heart className="h-5 w-5" />
+      <Button
+        variant="ghost"
+        size="icon"
+        className="absolute top-3 right-3 rounded-full text-white bg-black/20 hover:bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity"
+        onClick={handleWishlistToggle}
+      >
+        <Heart className={cn("h-5 w-5", isWishlisted ? 'fill-primary text-primary' : 'text-white')} />
         <span className="sr-only">Add to wishlist</span>
       </Button>
     </div>
