@@ -44,7 +44,7 @@ export function PropertyCard({ property, className }: PropertyCardProps) {
             <CarouselNext className="absolute right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
           </Carousel>
         </div>
-        <div className="mt-2 grid">
+        <div className="mt-2 grid gap-0.5">
           <div className="flex items-start justify-between">
             <h3 className="font-medium text-base truncate pr-2">
               {property.location}
@@ -54,7 +54,7 @@ export function PropertyCard({ property, className }: PropertyCardProps) {
               <span className="font-light">{property.rating.toFixed(2)}</span>
             </div>
           </div>
-          <p className="text-muted-foreground text-sm">Hosted by {property.host.name}</p>
+          <p className="text-muted-foreground text-sm truncate">Hosted by {property.host.name}</p>
           <p className="text-muted-foreground text-sm">Apr 1 - 6</p>
           <p className="mt-1">
             <span className="font-semibold text-base">${property.price}</span>

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
 import {
   Home,
   Mountain,
@@ -13,8 +12,8 @@ import {
   Building,
   Flame,
   Car,
-  ChevronLeft,
-  ChevronRight,
+  Wind,
+  Ship,
 } from 'lucide-react'
 
 const categories = [
@@ -28,8 +27,8 @@ const categories = [
   { name: 'City', icon: <Building /> },
   { name: 'Camping', icon: <Flame /> },
   { name: 'OMG!', icon: <Car /> },
-  { name: 'Amazing pools', icon: <Waves /> },
-  { name: 'Farms', icon: <Home /> },
+  { name: 'Amazing pools', icon: <Wind /> },
+  { name: 'Farms', icon: <Ship /> },
 ]
 
 export function Categories() {

@@ -143,7 +143,7 @@ export default function PropertyPage({ params }: { params: { id: string } }) {
                     <label htmlFor="guests" className="block text-sm font-medium text-muted-foreground">GUESTS</label>
                     <input type="text" id="guests" defaultValue="1 guest" className="mt-1 block w-full rounded-md border-input bg-transparent p-2" />
                   </div>
-                  <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Reserve</Button>
+                  <Button size="lg" className="w-full">Reserve</Button>
                   <p className="text-center text-sm text-muted-foreground">You won't be charged yet</p>
                    <div className="space-y-2 text-sm">
                         <div className="flex justify-between">
