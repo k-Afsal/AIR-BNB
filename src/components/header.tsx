@@ -11,8 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Input } from '@/components/ui/input';
-import { Menu, Search, UserCircle, Video } from 'lucide-react';
-import { Separator } from './ui/separator';
+import { Menu, Search, UserCircle } from 'lucide-react';
 
 export function Header() {
   return (
@@ -37,12 +36,6 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-           <Button variant="ghost" className="hidden md:inline-flex" asChild>
-            <Link href="/recorder">
-                <Video className="mr-2 h-4 w-4" />
-                Recorder
-            </Link>
-          </Button>
            <Button variant="ghost" className="hidden md:inline-flex">
             Become a host
           </Button>
@@ -59,12 +52,6 @@ export function Header() {
               <DropdownMenuItem>Sign Up</DropdownMenuItem>
               <DropdownMenuItem>Log In</DropdownMenuItem>
               <DropdownMenuSeparator />
-               <DropdownMenuItem asChild>
-                 <Link href="/recorder">
-                    <Video className="mr-2 h-4 w-4" />
-                    Recorder
-                </Link>
-              </DropdownMenuItem>
               <DropdownMenuItem>Help Center</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
