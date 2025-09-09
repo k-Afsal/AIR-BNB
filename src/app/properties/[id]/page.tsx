@@ -20,7 +20,6 @@ import {
   Snowflake,
   Heater,
   Dog,
-  Elevator,
   Dumbbell
 } from 'lucide-react';
 
@@ -32,7 +31,7 @@ const amenityIcons: { [key: string]: React.ReactNode } = {
   Heating: <Heater className="h-5 w-5" />,
   'Pet friendly': <Dog className="h-5 w-5" />,
   'Indoor fireplace': <Snowflake className="h-5 w-5" />,
-  Elevator: <Elevator className="h-5 w-5" />,
+  Elevator: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 3v18"/><path d="m6 7 4-4 4 4"/><path d="m6 17 4 4 4-4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>,
   Gym: <Dumbbell className="h-5 w-5" />,
   Beachfront: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16.4 2.3a1 1 0 0 1 1.2 1.2l-4 16a1 1 0 0 1-1.2 1.2l-4-16a1 1 0 0 1 1.2-1.2Z"/><path d="M12 2v20"/><path d="M4.2 11.2 19.8 12.8"/></svg>,
   Patio: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22v-8"/><path d="M12 14h.01"/><path d="M20 14h.01"/><path d="M4 14h.01"/><path d="M20 6H4v8h16V6Z"/><path d="m5 14-1 8h20l-1-8"/></svg>,
