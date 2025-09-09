@@ -6,7 +6,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
@@ -25,11 +24,11 @@ export function Header() {
         
         <div className="flex flex-1 md:flex-none justify-center">
             <div className="flex items-center gap-2 rounded-full border p-2 shadow-sm hover:shadow-md transition-shadow">
-                <button className="px-4 font-medium">Anywhere</button>
+                <button className="px-4 font-medium text-sm">Anywhere</button>
                 <div className="h-6 border-l" />
-                <button className="px-4 font-medium">Any week</button>
+                <button className="px-4 font-medium text-sm">Any week</button>
                 <div className="h-6 border-l" />
-                <button className="px-4 text-muted-foreground">Add guests</button>
+                <button className="px-4 text-sm text-muted-foreground">Add guests</button>
                 <Button type="submit" size="icon" className="rounded-full bg-primary h-8 w-8">
                   <Search className="h-4 w-4 text-primary-foreground" />
                   <span className="sr-only">Search</span>
@@ -38,24 +37,24 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-           <Button variant="ghost" className="hidden lg:inline-flex rounded-full px-4 py-2">
-            Become a host
+           <Button variant="ghost" className="hidden lg:inline-flex rounded-full px-4 py-2 font-medium">
+            Airbnb your home
           </Button>
           <Button variant="ghost" size="icon" className="hidden md:inline-flex rounded-full">
             <Globe className="h-5 w-5" />
+            <span className="sr-only">Language</span>
           </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="flex items-center gap-2 rounded-full px-2 py-1 h-auto">
-                <Menu className="h-5 w-5" />
+                <Menu className="h-5 w-5 text-muted-foreground" />
                 <UserCircle className="h-8 w-8 text-muted-foreground" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56 mt-2">
-              <DropdownMenuItem className="font-bold">Sign Up</DropdownMenuItem>
-              <DropdownMenuItem>Log In</DropdownMenuItem>
+              <DropdownMenuItem className="font-bold">Sign up</DropdownMenuItem>
+              <DropdownMenuItem>Log in</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Gift cards</DropdownMenuItem>
               <DropdownMenuItem>Airbnb your home</DropdownMenuItem>
               <DropdownMenuItem>Help Center</DropdownMenuItem>
             </DropdownMenuContent>

@@ -3,6 +3,7 @@ import { PropertyListings } from '@/components/property-listings';
 import { getProperties } from '@/lib/data';
 import { MapToggle } from '@/components/map-toggle';
 import { Categories } from '@/components/categories';
+import { Footer } from '@/components/footer';
 
 export default function Home() {
   const properties = getProperties();
@@ -14,6 +15,7 @@ export default function Home() {
         <PropertyListings properties={properties} />
       </main>
       <MapToggle />
+      <Footer />
     </div>
   );
 }

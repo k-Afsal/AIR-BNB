@@ -1,6 +1,7 @@
 import { getPropertyById } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
 import { ImageGallery } from '@/components/image-gallery';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -166,6 +167,7 @@ export default function PropertyPage({ params }: { params: { id: string } }) {
           </aside>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
