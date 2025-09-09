@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useTransition, type ReactNode } from 'react';
-import { useFormState } from 'react-dom';
+import { useState, useTransition, type ReactNode, useActionState } from 'react';
 import { getAIDestinationSuggestion } from '@/app/actions';
 
 import {
@@ -43,7 +42,7 @@ function SubmitButton() {
 
 export function DestinationGuide({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [state, formAction] = useFormState(getAIDestinationSuggestion, initialState);
+  const [state, formAction] = useActionState(getAIDestinationSuggestion, initialState);
 
   const hasResult = state.data;
 
